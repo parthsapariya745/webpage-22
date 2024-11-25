@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar{
+    padding-inline: 205px;
+}
+.hero-part{
+    padding-left: 205px;
+}
+.hero-head{
+    font-family: "Playfair Display", serif;
+}
+.search-input input::placeholder{
+    color: #B08BB9;
+}
+@media screen and (max-width: 1370px) {
+    .hero-detail h1{
+        font-size: 40px;
+    }
+    .hero-detail p{
+        font-size: 17px;
+    }
+    .hero-part .hero-img{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .navbar{
+        padding-inline: 80px;
+    }
+    .hero-part{
+        padding-left: 80px;
+    }
+    .hero-part .hero-img{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .navbar{
+        padding-inline: 50px;
+    }
+    .hero-part{
+        padding-inline: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-part .hero-detail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding-top: 110px;
+    }
+    .hero-detail h1{
+        font-size: 35px;
+    }
+    .hero-detail p{
+        font-size: 15px;
+        padding-top: 0px;
+    }
+    .hero-detail .search-input{
+        margin-top: 12px;
+    }
+    .hero-part .hero-img{
+        width: 75vw;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .navbar{
+        padding-inline: 20px;
+    }
+    .nav-menu a,.nav-menu button{
+        display: none;
+    }
+    .nav-menu .menu{
+        display: contents;
+    }
+    .hero-detail h1{
+        line-height: 46px;
+    }
+    .hero-part .hero-img{
+        width: 95vw;
+    }
+}
+@media screen and (max-width : 480px) {
+    .hero-part{
+        width: auto;
+        background-image: url(./Assets/hero-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: bottom;
+    }
+    .hero-part .hero-img{
+        display: none;
+    }
+}
